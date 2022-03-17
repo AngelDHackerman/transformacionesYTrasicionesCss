@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    .nav {
+      display: flex;
+      gap: 10px;
+    }
+    .nav li ul{ 
+      display: block;
+      opacity: 0;/* con esto escondemos los subemenus del los li */
+      position: absolute;
+      margin-left: 10px; 
+      transition: opacity 400ms;/* Aqui le agregamos el delay con transition, estamos retrasando la opacidad. */
+      transition-delay: 300ms;
+    }
+    .nav li:hover > ul { /* > esto significa que se aplicara solo al hijo directo */
+      opacity: 1;
+      transition: opacity 400ms;/* Aqui le agregamos el delay con transition, estamos retrasando la opacidad. */
+      transition-delay: 300ms;
+    }
+    .nav li ul li { 
+      position: relative;
+      right: -80px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="">Mujer</a>
+      <ul>
+        <li><a href="">Camisetas</a></li>
+        <li><a href="">Pantalones</a></li>
+        <li><a href="">Shorts</a>
+          <ul>
+            <li><a href="">Cortos</a></li>
+            <li><a href="">Largos</a></li>
+            <li><a href="">Medianos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="">Hombre</a></li>
+    <li><a href="">Niños</a></li>
+  </ul>
+</body>
+</html>

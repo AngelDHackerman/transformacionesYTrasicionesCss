@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .shadow {
+      border-radius: 50%;
+      background: lightgray;
+      width: 100px;
+      height: 100px;
+    }
+    .circle:hover { 
+      transform: translate(20px, -20px);/* 20px a la DERECHA y -20px hacia ARRIBA */
+    }
+    .circle {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: #85FFBD;
+      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+      transition: transform 1s;/* propiedad CLAVE PARA DARLE UN DELAY a la animacion en CSS */
+    }
+  </style>
+</head>
+<body>
+  <div class="shadow">
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

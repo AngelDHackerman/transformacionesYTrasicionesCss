@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div:hover { 
+      /* transform: rotate(90deg); */
+      transform: rotate(90deg);
+    }
+    div { 
+      background: lime;
+      width: 150px;
+      height: 100px;
+      transform-origin: left top;/* con esto cambiamos el centro, el eje de rotacion */
+      
+      transition: transform 1s;/* propiedad CLAVE PARA DARLE UN DELAY a la animacion en CSS */
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

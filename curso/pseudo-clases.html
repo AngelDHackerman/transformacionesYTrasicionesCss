@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color: black;
+    }
+    .links a:link { /* Este le deberia dar el color a los Links NO visitados */
+      color: green; 
+    }
+    a:visited { /* Este le deberia dar el color a los Links YA visitados  */
+      color: hotpink;
+    }
+    a:hover { /* afecta si SOBREPONEMOS el mouse sobre el elemento */
+      background-color: tomato;
+    }
+    p:not(.maravillas) { /* Todas las clases MENOS .maravillas var a llevar el codigo de abajo */ 
+      color: lightsalmon;
+    }
+    .container div:nth-child(1) { /* Le dara las propiedades al HIJO seleccionado */
+      color: lightseagreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="links">
+    <a href="/">Alicia</a>
+    <a href="/">Angel</a>
+    <a href="/">Hola</a>
+    <a href="">hihi</a>
+
+    <p>En el </p>
+    <p class="maravillas">pais</p>
+  </div>
+
+  <div class="container">
+    <div>Hola</div>
+    <div>Como</div>
+    <div>Estas</div>
+  </div>
+</body>
+</html>

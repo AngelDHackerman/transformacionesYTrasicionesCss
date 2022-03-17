@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .circle { 
+      background: #BE93C5;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .circle:hover { 
+      transform: scale(1.5, .8); /* con esto AUNMENTA 1.5 veces su tamaño original */
+      /* transform: scaleX(1.5); con scaleX y scaleY se le puede agrandar y reducir solo en el eje seleccionado. 
+      transform: scaleY(1.5); */
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+</html>

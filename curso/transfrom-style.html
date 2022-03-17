@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container { 
+      position: relative;/* este es el ANCLA del position absolute */
+      width: 100px;
+      height: 100px;
+      border: 5px solid hotpink;
+      perspective: 100px;/* esta es la "PROFUNDIDA" que tendran los elementos dentro de .container*/
+    }
+    .item { 
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background:peru;
+      opacity: 0.5;
+      transform-style: preserve-3d;/* PIEZA CLAVE, con esto le indicamos que sera un objeto 3D */
+      transform: rotateX(45deg);/* esto lo hace girar hace el eje Z del modelo 3D  */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item"></div>
+  </div>
+</body>
+</html>
